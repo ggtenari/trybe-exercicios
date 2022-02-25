@@ -1,17 +1,32 @@
-div{
-  padding: 1px;
+ol li{
+  background-color: yellow;
 }
-div:hover{
-  border: 3px solid black;
+ol li.par{
+  color: green;
 }
-h3{
-  font-family: monospace;
+ol li.impar{
+  text-transform: uppercase;
 }
-
-#terceira-div {
-  width: 400px;
+h3, h1 {
+  color: red;
 }
-
-.impar{
-  font-style: italic;
+h1.italico {
+  width: 500px;
+  border: 1px solid black;
+}
+li {
+  font-size: 20px;
+}
+li.italico{
+  font-weight: bolder;
+}
+.azul{
+  color: blue;
+}
+.java{
+  background-color: pink;
+}
+.link:hover{
+  font-weight: bolder;
+  color: yellow;
 }
