@@ -1,14 +1,17 @@
-h1, p {
-  text-align: center;
+div{
+  padding: 1px;
 }
-
-li:hover{
-  background-color: aqua;
+div:hover{
+  border: 3px solid black;
 }
-
-li:active{
+h3{
   font-family: monospace;
 }
-ul, ol{
-  list-style: none;
+
+#terceira-div {
+  width: 400px;
+}
+
+.impar{
+  font-style: italic;
 }
