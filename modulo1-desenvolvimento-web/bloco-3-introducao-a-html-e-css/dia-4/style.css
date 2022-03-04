@@ -1,0 +1,27 @@
+body {
+background-color: rgb(110, 145, 122);
+}
+
+.dados li {
+    margin-left: 200px;
+}
+
+#stomatopoda {
+ float: left;"
+}
+
+nav p {
+    display: inline;
+    margin-left: 50px;
+}
+
+.geral {
+    background-color: black;
+    height: 200px;
+    width: 600px;
+    color: white;
+}
+
+article {
+    background-color: white;
+}

@@ -1,79 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranking</title>
-    <style>
-      body{
-          text-align: center;
-      }
-
-      h1 {
-        text-align: center;
-      }
-
-      .first {
-        background-color: rgb(235, 200, 84);
-        font-size: 20px;
-        height: 50px;
-        text-align: center;
-        width: 200px;
-        display: inline-block;
-      }
-
-      .second {
-        background-color: rgb(219, 219, 219);
-        font-size: 20px;
-        height: 50px;
-        text-align: center;
-        width: 300px;
-        display: inline-block;
-      }
-
-      .third {
-        background-color: rgb(170, 142, 106);
-        font-size: 20px;
-        height: 50px;
-        text-align: center;
-        width: 300px;
-        display: inline-block;
-      }
-
-      .inline li {
-          display: inline;
-      }
-
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Stomatopoda</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <header>
-      <h1>Hackathon Results</h1>
+        <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
     </header>
-    <section >
-      <ul>
-        <li class="first">1º - Equipe 1</li>
-        <br>
-        <li class="second">2º - Equipe 2</li>
-        <li class="third">3º - Equipe 3</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Premiação Primeiro Lugar:</h3>
-      <ul class="inline">
-        <li>| R$ 1000,00 por integrante da equipe |</li>
-        <li>| Bootcamp de 2 meses com possibilidade de contratação |</li>
-      </ul>
-      <h3>Premiação Segundo Lugar:</h3>
-      <ul class="inline">
-        <li>| R$ 600,00 por integrante da equipe |</li>
-        <li>| Participação no processo seletivo para o Bootcamp |</li>
-      </ul>
-      <h3>Premiação Terceiro Lugar:</h3>
-      <ul class="inline">
-        <li>| R$ 300,00 por integrante da equipe |</li>
-        <li>| Participação no processo seletivo para o Bootcamp |</li>
-      </ul>
-    </section>
+    <nav>
+      <p><a href="p-inicial">Página Inicial </a></p>
+      <p><a href="sobre">Sobre</a></p>
+      <p><a href="contato">Contato</a></p>
+    </nav>
+    <article>
+      <section class="geral">
+        <h3>Dados gerais</h3><ul class="dados">
+          <img id="stomatopoda" class="inline" width="180px" src="http://cifonauta.cebimar.usp.br/site_media/aem_trxEAJ_cover.jpg"
+        alt="Imagem de um Stomatopoda">
+          <li>Nome cientifico: <i>Odontodactylus scyllarus</i></li>
+          <li>Reino: Animalia</li>
+          <li>Filo: Arthropoda</li>
+          <li>Subfilo: Crustacea</li>
+          <li>Classe: Malacostraca</li>
+          <li>Subclasse: Hoplocarida</li>
+          <li>Ordem: Stomatopoda</li>
+        </ul>
+      <main>
+        </section>
+        <h3>Fatos sobre o Stomatopoda</h3>
+        <section>
+          <h4>Enxergam tudo!</h4>
+          <p>Os Stomatopodas possuem 16 cones de recepcao de cor,
+            aproximadamente <b>5x</b> mais que os humanos e <b>3x</b> 
+            que as borboletas.</p>
+          <img width="300px" src="thermonoculear.png" alt="imagem de uma explosao de cores">
+        </section>
+        <section>
+          <h4>Extremamente fortes!</h4>
+          <p>A potencia predatoria de um Stomatopoda eh gigantesca, 
+            tendo uma enorme forca em suas garras frontais. 
+            <b>Letal ate para os humanos!!</b><p>
+          <img width="300px" src="stomatopoda.png" alt="Ilustracao de um ataque de Stomatopoda">
+        </section>
+        <section>
+          <h3>Quer ver este incrivel animal em acao? <a href="https://www.youtube.com/watch?v=E0Li1k5hGBE">Veja este video!</a></h3>
+        </section>
+      </main>
+      <section>
+        <h5>Referencias bibliograficas:</h5>
+        <span><a href="https://pt.wikipedia.org/wiki/Stomatopoda">wikipedia</a></span>
+        <span><a href="https://theoatmeal.com/comics/mantis_shrimp">theoatmeal</a></span>
+      </section>
+
+    </article>
+    <footer>Conteúdo compilado por Gabriel Tenari, 2022</footer>
   </body>
 </html>
