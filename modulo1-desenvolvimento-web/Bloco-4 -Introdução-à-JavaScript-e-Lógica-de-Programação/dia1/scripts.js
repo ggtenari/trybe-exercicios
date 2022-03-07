@@ -1,13 +1,10 @@
-const a = -99;
-const b = -55;
-const c = -66;
-
-if (a > b) {
-    console.log(a);
+const a = 0
+if (a > 0) {
+    console.log("positive");
 }
-else if (b > c) {
-    console.log(b);
+else if (a < 0) {
+    console.log("negative");
 }
-else {
-    console.log(c);
+else if (a === 0) {
+    console.log("zero");
 }
