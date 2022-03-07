@@ -1,10 +1,6 @@
-const a = 3
-const b = 4
-const c = 2
+const custo = 20
+const venda = 35
 
-if (a % 2 === 0 && b % 2 === 0 && c % 2 ===0) {
-    console.log(false);
-}
-else {
-    console.log(true);
-}
+let lucro = (venda - (custo * 1.2)) * 1000
+
+console.log(lucro);
