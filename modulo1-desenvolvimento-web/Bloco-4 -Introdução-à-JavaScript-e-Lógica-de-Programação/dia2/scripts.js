@@ -5,4 +5,6 @@ for (let numero of numbers) {
     soma = soma + numero
 }
 
+soma = soma / numbers.length
+
 console.log(soma);
