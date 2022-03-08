@@ -1,15 +1,12 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let impar = []
+let menor = []
 
 for (numero of numbers) {
-    if (numero % 2 !== 0) {
-        impar.push(numero)
+    if (menor.length === 0) {
+        menor.push(numero)
     }
+    else if (numero < menor) {
+        menor[0] = numero
+    }   
 }
-
-if (impar.length === 0) {
-    console.log("nenhum valor ímpar encontrado");
-}
-else {
-    console.log(impar.length);
-}
+console.log(menor);
