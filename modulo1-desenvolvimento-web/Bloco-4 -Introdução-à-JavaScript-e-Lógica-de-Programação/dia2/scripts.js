@@ -7,4 +7,11 @@ for (let numero of numbers) {
 
 soma = soma / numbers.length
 
+if (soma > 20) {
+    console.log("Soma maior que vinte");
+}
+else {
+    console.log("Soma menor ou igual a vinte");
+}
+
 console.log(soma);
