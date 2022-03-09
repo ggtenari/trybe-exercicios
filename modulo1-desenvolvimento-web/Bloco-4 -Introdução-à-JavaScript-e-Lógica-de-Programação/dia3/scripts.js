@@ -1,7 +1,15 @@
-let palavra = "computador"
-let palavraInvertida = ""
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let maiorPalavra = ""
+let menorPalavra = ""
 
-for (let index = 9; index >= 0; index -= 1) {
-    palavraInvertida += palavra[index]
+for (let lang of array){
+    if (lang.length > maiorPalavra.length){
+        maiorPalavra = lang
+    }
+    if (lang.length < menorPalavra.length || menorPalavra.length === 0){
+        menorPalavra = lang
+    }
 }
-console.log(palavraInvertida);
+
+console.log(maiorPalavra);
+console.log(menorPalavra);
