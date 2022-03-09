@@ -1,15 +1,17 @@
-let array = ['java', 'javascript', 'python', 'html', 'css'];
-let maiorPalavra = ""
-let menorPalavra = ""
+let primos = [1, 2]
+let condicao = 0
 
-for (let lang of array){
-    if (lang.length > maiorPalavra.length){
-        maiorPalavra = lang
+for (let num = 3; num <= 500; num += 1){
+    for (index = primos.length; index > 0; index -= 1) {
+            if (num % primos[index] == 0) {
+                condicao = 0
+                break
+            } else {
+                condicao += 1
+            }
     }
-    if (lang.length < menorPalavra.length || menorPalavra.length === 0){
-        menorPalavra = lang
+    if (condicao > 0){
+        primos.push(num)
     }
 }
-
-console.log(maiorPalavra);
-console.log(menorPalavra);
+console.log(primos);
