@@ -1,7 +1,7 @@
-let fatorial = 1
+let palavra = "computador"
+let palavraInvertida = ""
 
-for (let num = 10; num > 0; num = num - 1){
-    fatorial = fatorial * num
+for (let index = 9; index >= 0; index -= 1) {
+    palavraInvertida += palavra[index]
 }
-
-console.log(fatorial);
+console.log(palavraInvertida);
