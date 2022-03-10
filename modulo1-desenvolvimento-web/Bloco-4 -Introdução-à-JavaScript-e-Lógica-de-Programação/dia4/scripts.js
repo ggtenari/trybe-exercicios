@@ -5,6 +5,20 @@ let info = {
     recorrente: 'Sim'
   };
 
-  for (let key in info){
-      console.log(info[key]);
+
+  let infoNova = {
+      personagem: 'Tio Patinhas',
+      origem: 'Christmas on Bear Mountain',
+      nota: "O último MacPatinhas",
+      recorrente: 'Sim'
   }
+
+let personagens = [info, infoNova]
+
+for (let key in info){
+    if (info[key] === infoNova[key] && key === 'recorrente') {
+        console.log('Ambos recorrentes');
+    } else { 
+        console.log(info[key] + ' e '  + infoNova[key]);
+    }
+}
