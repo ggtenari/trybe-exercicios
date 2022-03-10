@@ -1,24 +1,13 @@
-let info = {
-    personagem: 'Margarida',
-    origem: 'Pato Donald',
-    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-    recorrente: 'Sim'
+let leitor = {
+    nome: 'Julia',
+    sobrenome: 'Pessoa',
+    idade: 21,
+    livrosFavoritos: [
+      {
+        titulo: 'O Pior Dia de Todos',
+        autor: 'Daniela Kopsch',
+        editora: 'Tordesilhas',
+      },
+    ],
   };
-
-
-  let infoNova = {
-      personagem: 'Tio Patinhas',
-      origem: 'Christmas on Bear Mountain',
-      nota: "O último MacPatinhas",
-      recorrente: 'Sim'
-  }
-
-let personagens = [info, infoNova]
-
-for (let key in info){
-    if (info[key] === infoNova[key] && key === 'recorrente') {
-        console.log('Ambos recorrentes');
-    } else { 
-        console.log(info[key] + ' e '  + infoNova[key]);
-    }
-}
+  console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + " se chama '" + leitor.livrosFavoritos[0].titulo + "'");
