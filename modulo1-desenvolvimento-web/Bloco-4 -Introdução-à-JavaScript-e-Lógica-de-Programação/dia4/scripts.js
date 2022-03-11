@@ -1,19 +1,16 @@
-let leitor = {
-    nome: 'Julia',
-    sobrenome: 'Pessoa',
-    idade: 21,
-    livrosFavoritos: [
-      {
-        titulo: 'O Pior Dia de Todos',
-        autor: 'Daniela Kopsch',
-        editora: 'Tordesilhas',
-      }, {
-        titulo: 'Harry Potter e o Prisioneiro de Azkaban',
-        autor: 'JK Rowling',
-        editora: 'Rocco',
-      }
-    ],
-  };
-  console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + " se chama '" + leitor.livrosFavoritos[0].titulo + "'");
+function indiceMaior (array) {
+    let maior = 0
+    let maiorIndex = 0
+    for (index in array) {
+        if (index === 0){
+            maior = array[index]
+            } else if (array[index] > maior){
+                maior = array[index]
+                maiorIndex = index
+                }
+        }
+    return maiorIndex
+    }
 
-console.log('Julia tem ' + leitor.livrosFavoritos.length + ' livros favoritos')
+let arrayTeste = [2, 4, 6, 1111, 999, 666]
+console.log(indiceMaior(arrayTeste));
