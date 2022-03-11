@@ -1,16 +1,16 @@
-function indiceMaior (array) {
-    let maior = 0
-    let maiorIndex = 0
+function indiceMenor (array) {
+    let menor = '';
+    let menorIndex = 0
     for (index in array) {
-        if (index === 0){
-            maior = array[index]
-            } else if (array[index] > maior){
-                maior = array[index]
-                maiorIndex = index
+        if (index == 0){
+            menor = array[index]
+            } else if (array[index] < menor){
+                menor = array[index]
+                menorIndex = index
                 }
         }
-    return maiorIndex
+    return menorIndex
     }
 
-let arrayTeste = [2, 4, 6, 1111, 999, 666]
-console.log(indiceMaior(arrayTeste));
+let arrayTeste = [222, 44, 6, 1111, 999, 666]
+console.log(indiceMenor(arrayTeste));
