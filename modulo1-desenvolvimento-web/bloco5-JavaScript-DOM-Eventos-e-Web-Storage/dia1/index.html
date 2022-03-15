@@ -55,7 +55,9 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
        function funcaoGeral() {
-           document.getElementById('center-content').style.backgroundColor = "white"
+           for (let item of document.getElementsByClassName('title')){
+             item.innerText = "Exercício 5.1 - JavaScript"
+           }
        }
        funcaoGeral();
     </script>
