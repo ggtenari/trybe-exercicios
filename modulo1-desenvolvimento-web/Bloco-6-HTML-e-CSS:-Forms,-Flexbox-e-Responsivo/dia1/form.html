@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TrybeTrip</title>
+        <meta charset="UTF-8"> 
+    </head>
+    <body>
+        <form action="" method="get">
+            <p>insira seu nome</p>
+            <input class="input" type="text" minlength="10" maxlength="40" id="name" name="nome" placeholder="ex: gabriel tenari">
+            <p>Insira seu email</p>
+            <input class="input" type="email" id="email" name="e-mail" placeholder="ex: gabrieltenari@gabrielmail.com">
+            <p>Qual seu destino preferido?</p>
+            <input class="input" type="radio" id="cidade" name="destino">Cidade
+            <input class="input" type="radio" id="campo" name="destino">Campo
+            <input class="input" type="radio" name="destino" id="praia">Praia
+            <input class="input" type="radio" name="destino" id="montanhas">Montanhas
+            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+            <textarea class="input" name="explicacao" id="textarea" cols="40" rows="10" maxlength="500"></textarea>
+            <p>qual a melhor data para sua viagem?</p>
+            <input class="input" type="date" name="data" id="data">
+            <br>
+            <br>
+            <label for="promocoes"><input class="input" type="checkbox" name="promocoes" id="promocoes">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            <br>
+            <label for="concordo"><input class="input" type="checkbox" name="termos" id="concordo">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            <br> <br>
+            <button type="submit" id="submit">submit</button>
+            <button id="limpar">limpar tudo</button>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
