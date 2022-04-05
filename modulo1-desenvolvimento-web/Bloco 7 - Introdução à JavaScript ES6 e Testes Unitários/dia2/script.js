@@ -1,52 +1,53 @@
-const order = {
-  name: 'Rafael Andrade',
-  phoneNumber: '11-98763-1416',
-  address: {
-    street: 'Rua das Flores',
-    number: '389',
-    apartment: '701',
-  },
-  order: {
-    pizza: {
-      marguerita: {
-        amount: 1,
-        price: 25,
-      },
-      pepperoni: {
-        amount: 1,
-        price: 20,
-      }
-    },
-    drinks: {
-      coke: {
-        type: 'Coca-Cola Zero',
-        price: 10,
-        amount: 1,
-      }
-    },
-    delivery: {
-      deliveryPerson: 'Ana Silveira',
-      price: 5,
-    }
-  },
-  payment: {
-    total: 60,
-  },
+const lesson1 = {
+  materia: 'Matemática',
+  numeroEstudantes: 20,
+  professor: 'Maria Clara',
+  turno: 'manhã',
 };
 
-// const customerInfo = (order) => {
-//   // Adicione abaixo as informações necessárias.
-//   return `Ola ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, ${order.address.street}, No: ${order.address.number}, AP: ${order.address.apartment}`
-// }
+const lesson2 = {
+  materia: 'História',
+  numeroEstudantes: 20,
+  professor: 'Carlos',
+};
 
-// console.log(customerInfo(order));
+const lesson3 = {
+  materia: 'Matemática',
+  numeroEstudantes: 10,
+  professor: 'Maria Clara',
+  turno: 'noite',
+};
 
-const orderModifier = (order) => {
-  order.name = "Luiz Silva"
-  order.payment.total = 50
-  return `Ola ${order.name}, o total do seu pedido de ${Object.keys(order.order.pizza)[0]}, ${Object.keys(order.order.pizza)[1]} e ${order.order.drinks.coke.type} eh R$ ${order.payment.total},00.`
-
+const addKey = (objeto, chave, valor) => {
+  objeto[chave] = valor
 }
 
-orderModifier(order);
-console.log(orderModifier(order));
+addKey(lesson2, 'turno', 'noite')
+
+
+
+const listaKeys = (objeto) => Object.keys(objeto)
+
+
+const objLength = (objeto) => Object.keys(objeto).length
+
+
+const listaValues = (objeto) => Object.values(objeto)
+
+
+const allLessons = {}
+allLessons.lesson1 = lesson1
+allLessons.lesson2 = lesson2
+allLessons.lesson3 = lesson3
+
+const somaEstudantes = (objeto) => {
+  let soma = objeto.lesson1.numeroEstudantes + objeto.lesson2.numeroEstudantes + objeto.lesson3.numeroEstudantes
+  return soma
+}
+// console.log(somaEstudantes(allLessons));
+
+const chaveValor = (objecto) => {
+  Object.values(objecto)
+}
+
+console.log(chaveValor(lesson1));
