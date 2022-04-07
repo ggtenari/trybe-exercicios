@@ -1,12 +1,23 @@
-const acordando = () => 'acordando'
-const cafe = () => `Bora tomar café!!`
-const dormir = () => `Partiu dormir!!`
-
-const doingThings = (func) => {
-  console.log(func());
+const cadastro = (nome) => {
+  let nomeSeparado = nome.split(' ')
+  let email = nomeSeparado[0]
+  for (i = 1; i < nomeSeparado.length; i += 1){
+    email += `_${nomeSeparado[i]}`
+  }
+  const funcionario = {
+    nomeCompleto: nome,
+    email: email + `@trybe.com`
+  }
+  return funcionario
 }
 
-doingThings(acordando)
-doingThings(cafe)
-doingThings(dormir)
+const newEmployees = (funcao) => {
+  const employees = {
+    id1: funcao('Pedro Guerra'),
+    id2: funcao('Luiza Drumond'),
+    id3: funcao('Carla Paiva'),
+  }
+  return employees;
+};
 
+console.log(newEmployees(cadastro));
